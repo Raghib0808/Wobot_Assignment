@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#ffe9d6"/>
+    </linearGradient>
+
+    <!-- Pattern of cooking icons -->
+    <pattern id="foodIcons" width="200" height="200" patternUnits="userSpaceOnUse">
+      <!-- Spoon -->
+      <path d="M100 20c10 0 30 12 26 34-3 15-26 28-26 28s-14-10-20-24c-7-15 0-38 20-38z M104 82c12 10 35 17 48 48" 
+            fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Fork -->
+      <g transform="translate(30,150) rotate(-15)">
+        <line x1="0" y1="0" x2="0" y2="40" stroke="rgba(0,0,0,0.05)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="6" y1="0" x2="6" y2="18" stroke="rgba(0,0,0,0.05)" stroke-width="3" stroke-linecap="round"/>
+        <line x1="-6" y1="0" x2="-6" y2="18" stroke="rgba(0,0,0,0.05)" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <!-- Leaf -->
+      <path d="M150 150 C160 130, 190 130, 200 150 C190 160, 170 160, 150 150" 
+            fill="none" stroke="rgba(0,0,0,0.04)" stroke-width="2"/>
+      <!-- Tomato -->
+      <g transform="translate(60,70)">
+        <circle cx="0" cy="0" r="14" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="2"/>
+        <path d="M-4 -14 q4 -6 8 0" stroke="rgba(0,0,0,0.05)" fill="none" stroke-width="2"/>
+      </g>
+    </pattern>
+
+    <!-- Soft blur blobs -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+  </defs>
+
+  <!-- Gradient background -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+
+  <!-- Soft color blobs -->
+  <circle cx="300" cy="200" r="300" fill="#ffe0b5" filter="url(#blur)" opacity="0.5"/>
+  <circle cx="1200" cy="800" r="400" fill="#ffd4b2" filter="url(#blur)" opacity="0.4"/>
+
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#foodIcons)"/>
+</svg>

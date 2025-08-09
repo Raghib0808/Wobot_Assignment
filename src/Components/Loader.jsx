@@ -1,5 +1,6 @@
 import React from "react";
-import "./Loader.css";
+import "./loader.css";
+// spelling mistake 
 
 const Loader = () => {
   return (
