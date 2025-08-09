@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    min-height: 300px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #aec6d4 0%, #6f6ab1 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    padding: 3rem;
+}
+
+.title h1 {
+    font-size: xx-large;
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header_img {
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 300px;
+    width: 70%;
+    overflow: hidden;
+}
+
+.header_img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.header_img img:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width: 800px) {
+    .title{
+        padding: 0;
+    }
+    .header{
+        padding: 1rem;
+    }
+
+}
+@media (max-width: 700px) {
+    
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header_img img{
+        aspect-ratio: 4/3;
+    }
+    .header_img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 920px) {
+    
+    .header{
+         padding: .6rem;
+    }
+
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ing{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ .p-datatable .p-datatable-tbody > tr > td,
+.p-datatable .p-datatable-thead > tr > th {
+    border-color: grey !important; /* Purple gridlines */
+}
+
+ .p-datatable .p-datatable-tbody > tr:hover {
+    background-color: rgba(111, 106, 177, 0.1) !important; /* Light purple hover */
+}
+
+.search{
+    padding: '10px 20px';
+    border-radius: '5px';
+    border: 'none';
+    background-color: '#6f6ab1';
+    color: '#fff';
+    cursor: 'pointer';
+  }
+
+
+  .put{
+    padding: '10px';
+    width: '300px';
+    margin-right: '10px';
+    border-radius: '5px';
+    border: '1px solid #ccc';
+  }
+
+
+  .recipes-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .recipe-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .recipe-card-content {
+    padding: 15px;
+  }
+  
+  .recipe-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card-description {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .no-results {
+    font-size: 1.2em;
+    color: #888;
+    text-align: center;
+  }
+
+
+ 
